@@ -56,16 +56,3 @@ app.get("/api/workouts/range", (req, res) => {
 });
 
 module.exports = app;
-
-// db.scores.aggregate( [
-//   {
-//     $addFields: {
-//       totalHomework: { $sum: "$homework" } ,
-//       totalQuiz: { $sum: "$quiz" }
-//     }
-//   },
-//   {
-//     $addFields: { totalScore:
-//       { $add: [ "$totalHomework", "$totalQuiz", "$extraCredit" ] } }
-//   }
-// ] )
