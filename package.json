@@ -12,15 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
-    "dotenv": "^8.2.0",
-    "express": "^4.16.3",
-=======
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.23.3",
->>>>>>> c11b91e7348ede93904d3736242151a35254539e
     "mongojs": "^3.1.0",
     "mongoose": "^5.9.22",
     "morgan": "^1.10.0",
