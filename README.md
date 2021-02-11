@@ -32,9 +32,6 @@ Contact me with any feedback or questions through GitHub or by email.
 
 ## Acceptance Criteria
 
-This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
-
 The user should be able to:
 
 - Add exercises to the most recent workout plan.

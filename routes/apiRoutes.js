@@ -9,6 +9,7 @@ app.get("/api/workouts", (req, res) => {
 });
 
 app.post("/api/workouts", ({ body }, res) => {
+  console.log(body);
   db.Workout.create(body)
     .then((dbWorkout) => {
       res.json(dbWorkout);
@@ -35,8 +36,17 @@ app.put("/api/workouts/:id", (req, res) => {
     });
 });
 
-app.post("/api/workouts/range", (req, res) => {
-  db.Workout.find({})
+app.get("/api/workouts/range", (req, res) => {
+  db.Workout.aggregate([
+    {
+      $addFields: {
+        totalDuration: { $sum: "$exercises.duration" },
+        totalWeight: { $sum: "$exercises.weight" },
+      },
+    },
+  ])
+    .sort({ _id: -1 })
+    .limit(7)
     .then((dbWorkout) => {
       res.json(dbWorkout);
     })
@@ -46,3 +56,16 @@ app.post("/api/workouts/range", (req, res) => {
 });
 
 module.exports = app;
+
+// db.scores.aggregate( [
+//   {
+//     $addFields: {
+//       totalHomework: { $sum: "$homework" } ,
+//       totalQuiz: { $sum: "$quiz" }
+//     }
+//   },
+//   {
+//     $addFields: { totalScore:
+//       { $add: [ "$totalHomework", "$totalQuiz", "$extraCredit" ] } }
+//   }
+// ] )
