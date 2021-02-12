@@ -3,7 +3,16 @@ const db = require("../models/");
 const mongoose = require("mongoose");
 
 app.get("/api/workouts", (req, res) => {
-  db.Workout.find({}).then((dbWorkout) => {
+  // db.Workout.find({}).then((dbWorkout) => {
+  //   res.json(dbWorkout);
+  // });
+  db.Workout.aggregate([
+    {
+      $addFields: {
+        totalDuration: { $sum: "$exercises.duration" },
+      },
+    },
+  ]).then((dbWorkout) => {
     res.json(dbWorkout);
   });
 });
