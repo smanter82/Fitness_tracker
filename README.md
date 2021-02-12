@@ -10,17 +10,32 @@ This is a workout tracker which will allow a user to view, create, and track dai
 
 ## Screenshots
 
+![Fit_Tracker_Homepage](./public/assets/fitTrackerScreenshot1.png)
+![Fit_Tracker_Add_Workout](./public/assets/fitTrackerScreenshot2.png)
+![Fit_Tracker_Dashboard](./public/assets/fitTrackerScreenshot3.png)
+
 ## Deployed App
+
+[Deployed_App](https://smanter82-fitness-tracker-app.herokuapp.com/?id=6025ef756384540015751e41)
 
 ## Table of Contents
 
 [Installation](#Installation)
+
 [Usage](#Usage)
+
 [Questions](#Questions)
 
 ## Installation
 
+Deployed on Heroku
+
 ## Usage
+
+*Create a workout
+*Add as many exercises as desired to workout
+*Complete workout, and return to homepage.
+*View trends/workout data on dashboard.
 
 ## Questions
 
@@ -29,33 +44,5 @@ Contact me with any feedback or questions through GitHub or by email.
 - [GitHub](https://github.com/smanter82)
 
 - Email: sarahmanter@gmail.com
-
-## Acceptance Criteria
-
-The user should be able to:
-
-- Add exercises to the most recent workout plan.
-
-- Add new exercises to a new workout plan.
-
-- View the combined weight of multiple exercises from the past seven workouts on the `stats` page.
-
-- View the total duration of each workout from the past seven workouts on the `stats` page.
-
-> **Important:** Look into using a MongoDB aggregate function to dynamically add up and return the total duration for each workout. Check out the [MongoDB documentation on the $addFields](https://docs.mongodb.com/manual/reference/operator/aggregation/addFields/), the [MongoDB documentation on the $sum operator](https://docs.mongodb.com/manual/reference/operator/aggregation/sum/), and the [Mongoose documentation on aggregate functions](https://mongoosejs.com/docs/api.html#aggregate_Aggregate) to learn how it can be accomplished.
-
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
-
-- [Set Up MongoDB Atlas](../04-Important/MongoAtlas-Setup.md)
-
-- [Deploy with Heroku and MongoDB Atlas](../04-Important/MongoAtlas-Deploy.md)
-
-## Submission on BCS
-
-You are required to submit the following:
-
-- The URL to the deployed application
-
-- The URL to the GitHub repository
 
 Some code on this application may have been done in collaboration with my Bootcamp study group classmates: https://github.com/arensalmela, https://github.com/dmaysteinman, https://github.com/EddiePhi, https://github.com/ReindeerCode, https://github.com/DustinErwin, https://github.com/Ewager1, https://github.com/mdjonestwo, https://github.com/shannonquinn91/Note-Taker, https://github.com/JesalDM
