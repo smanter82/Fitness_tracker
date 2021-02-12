@@ -1,15 +1,12 @@
 const express = require("express");
-const mongojs = require("mongojs");
 const logger = require("morgan");
 const connectDB = require("./config");
 
 const PORT = process.env.PORT || 3030;
 
-const db = require("./models");
-
 const app = express();
 
-connectDB(app);
+connectDB();
 
 app.use(logger("dev"));
 
