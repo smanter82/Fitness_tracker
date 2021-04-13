@@ -6,7 +6,7 @@
 
 <!-- Some wording taken from instructions readme -->
 
-This is a workout tracker which will allow a user to view, create, and track daily workouts. The user will also be able to log multiple exercises in a workout on a gien day and track the name, type, weight, sets, reps, and duration of exercise. If the exercise is cardio, the user will be able to track the distance traveled. The app will allow users to reach their fitness goals more quickly by tracking their workout progress.
+This is a workout tracker which will allow a user to view, create, and track daily workouts. The user will also be able to log multiple exercises in a workout on a given day and track the name, type, weight, sets, reps, and duration of exercise. If the exercise is cardio, the user will be able to track the distance traveled. The app will allow users to reach their fitness goals more quickly by tracking their workout progress.
 
 ## Screenshots
 
